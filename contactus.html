@@ -14,6 +14,15 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title> QES Main - Contact Us </title>
 
@@ -22,113 +31,117 @@
 <body>
     <section class="qes_main_section about about-portfolio contactus">
         <div class="main_inner_section">
-           <!-- header section  -->
-           <header>
-            <div class="common_section_padding common_width">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-6 col-sm-6 col-md-2 col-lg-2 col-xl-2">
-                            <div class="header_logo">
-                                <img src="./assets/img/QES Consultancy 2.png" alt="logo" class="img-fluid">
+            <!-- header section  -->
+            <header>
+                <div class="common_section_padding common_width">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-2 col-lg-2 col-xl-2">
+                                <div class="header_logo">
+                                    <img src="./assets/img/QES Consultancy 2.png" alt="logo" class="img-fluid">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7 align-self-end ">
-                            <div class="navbar_menu">
-                                <ul class="menu_list">
-                                    <li class="nav-list">
-                                        <a href="index.html" >Home</a>
-                                    </li>
-                                    <li class="nav-list">
-                                        <a href="about.html">About Us</a>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                        <div class="menu-dropdown">
-                                            <ul class="nav-drop-box">
-                                                <li class="nav-drop-link">
-                                                    <a href="our-portfolio.html">Our Portfolio</a>
-                                                </li>
-                                                <li class="nav-drop-link">
-                                                    <a href="testimonial.html">Testimonials</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-list">
-                                        <a href="our-services.html">Services</a>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                        <div class="menu-dropdown">
-                                            <ul class="nav-drop-box">
-                                                <li class="nav-drop-link">
-                                                    <a href="service-details.html">Service Details</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-list">
-                                        <a href="#">Resources</a>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                        <div class="menu-dropdown">
-                                            <ul class="nav-drop-box">
-                                                <li class="nav-drop-link">
-                                                    <a href="article-collection.html">Articles</a>
-                                                </li>
-                                                <li class="nav-drop-link">
-                                                    <a href="case-study-media.html">Case Study</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-list"><a href="Projects.html">Projects</a></li>
-                                    <li class="nav-list"><a href="contactus.html" class="active">Contact Us</a></li>
-                                </ul>
+                            <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7 align-self-end sm-align ">
+                                <div class="navbar_menu">
+                                    <ul class="menu_list">
+                                        <li class="nav-list">
+                                            <a href="index.html" >Home</a>
+                                        </li>
+                                        <li class="nav-list">
+                                            <a href="about.html">About Us</a>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                            <div class="menu-dropdown">
+                                                <ul class="nav-drop-box">
+                                                    <li class="nav-drop-link">
+                                                        <a href="our-portfolio.html">Our Portfolio</a>
+                                                    </li>
+                                                    <li class="nav-drop-link">
+                                                        <a href="testimonial.html">Testimonials</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-list">
+                                            <a href="our-services.html">Services</a>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                            <div class="menu-dropdown">
+                                                <ul class="nav-drop-box">
+                                                    <li class="nav-drop-link">
+                                                        <a href="service-details.html">Service Details</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-list">
+                                            <a href="#">Resources</a>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                            <div class="menu-dropdown">
+                                                <ul class="nav-drop-box">
+                                                    <li class="nav-drop-link">
+                                                        <a href="article-collection.html">Articles</a>
+                                                    </li>
+                                                    <li class="nav-drop-link">
+                                                        <a href="case-study-media.html">Case Study</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-list"><a href="Projects.html">Projects</a></li>
+                                        <li class="nav-list"><a href="contactus.html" class="active">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <button class="btn float-end bar_btn mobile-block">
+                                    <img src="./assets/img/Menu.png" alt="menu image" class="img-fluid">
+                                </button>
                             </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-                            <div class="social_box">
-                                <div class="social-section">
-                                    <div class="contact_help">
-                                        <img src="./assets/img/Ringer Volume.png" alt="ring-icon" class="img-fluid">
-                                        <div class="contact_help_details">
-                                            <a href="#">
-                                                <div>Call Us For Help! <span> +65 9430 6076 </span></div>
-                                            </a>
+                            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                                <div class="social_box">
+                                    <div class="social-section">
+                                        <div class="contact_help">
+                                            <img src="./assets/img/Ringer Volume.png" alt="ring-icon" class="img-fluid">
+                                            <div class="contact_help_details">
+                                                <a href="#">
+                                                    <div>Call Us For Help! <span> +65 9430 6076 </span></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="contact_help">
+                                            <img src="./assets/img/Letter.png" alt="ring-icon" class="img-fluid">
+                                            <div class="contact_help_details">
+                                                <a href="#">
+                                                    <div>Mail Us <span> contact@qasefty.com </span></div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="contact_help">
-                                        <img src="./assets/img/Letter.png" alt="ring-icon" class="img-fluid">
-                                        <div class="contact_help_details">
-                                            <a href="#">
-                                                <div>Mail Us <span> contact@qasefty.com </span></div>
+                                    <div class="request_quotes">
+                                        <div class="search_btn">
+                                            <button class="btn" type="button">
+                                                <img src="./assets/img/Search.png" alt="search-icon" class="img-fluid">
+                                            </button>
+                                        </div>
+                                        <div class="request_btn">
+                                            <a href="contactus.html" class="btn same_btn">
+                                                Request For Quote
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="request_quotes">
-                                    <div class="search_btn">
-                                        <button class="btn" type="button">
-                                            <img src="./assets/img/Search.png" alt="search-icon" class="img-fluid">
-                                        </button>
-                                    </div>
-                                    <div class="request_btn">
-                                        <a href="contactus.html"  class="btn same_btn">
-                                            Request For Quote
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <!-- header section  -->
+            </header>
+            <!-- header section  -->
             <!-- banner section  -->
             <div class="banner_section ">
                 <div class="about_banner">
-                    <img src="./assets/img/contactusbanner.png" alt="banner-img" class="img-fluid">
+                    <img src="./assets/img/contactusbanner.png" alt="banner-img" class="img-fluid desktop-block">
+                    <img src="./assets/img/contactusbanner_mobile.png" alt="banner-img" class="img-fluid mobile-block">
                 </div>
                 <div class="content">
-                    <div>
+                    <div class="contact_banner_text">
                         <h1>Contact Us</h1>
                         <h3>An exceptionally unique experience tailored to you</h3>
                         <div class="banner_request_btn">
@@ -144,7 +157,7 @@
 
             <!-- contact card section  -->
             <div class="our-portfolio-section contactus-box">
-                <div class="portfolio-inner common_width mx-auto">
+                <div class="portfolio-inner common_width mx-auto desktop-block">
                     <div class="container-fluid">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
@@ -213,8 +226,102 @@
                                     </div>
                                 </div>
                             </div>
-
-
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-inner common_width mx-auto mobile-block">
+                    <div class="service_right service_right_mobile ">
+                        <div id="service-section-slider" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#service-section-slider" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#service-section-slider" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#service-section-slider" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#service-section-slider" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card h-100">
+                                        <img src="./assets/img/Location_contact.png"
+                                            class="card-img-top img-fluid " alt="contact-img">
+                                        <!-- <img src="./assets/img/Location_contact_blue.png"
+                                            class="card-img-top img-fluid nothover" alt="contact-img"> -->
+                                        <div class="contact_content">
+                                            <h4 class="para_26_style">
+                                                HQ Singapore
+                                            </h4>
+                                            <p class="same-para-style">
+                                                QE Safety Consultancy Pte. Ltd, <br>7030 Ang Mo Kio Avenue 5,<br>
+                                                #01-28,
+                                                Northstar @ AMK, <br>Singapore 569880.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card h-100">
+                                        <img src="./assets/img/Location_contact.png"
+                                            class="card-img-top img-fluid " alt="contact-img">
+                                        <!-- <img src="./assets/img/Location_contact_blue.png"
+                                            class="card-img-top img-fluid nothover" alt="contact-img"> -->
+                                        <div class="contact_content">
+                                            <h4 class="para_26_style">
+                                                Malaysia
+                                            </h4>
+                                            <p class="same-para-style">
+                                                QE Safety Consultancy Sdn Bhd,<br>07-01, Austin 18, Jalan Austin
+                                                <br>Perdana
+                                                3, Taman Austin Perdana,<br>81100, Johor Bahru, Johor.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card h-100">
+                                        <img src="./assets/img/Ringer Volume_contact.png"
+                                            class="card-img-top img-fluid" alt="contact-img">
+                                        <!-- <img src="./assets/img/Ringer Volume_contact_blue.png"
+                                            class="card-img-top img-fluid nothover" alt="contact-img"> -->
+                                        <div class="contact_content">
+                                            <h4 class="para_26_style">
+                                                Telephone
+                                            </h4>
+                                            <p class="same-para-style">
+                                                Office: +65 6694 3200 <br>Sales Manager: +65 9430 6076
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card h-100">
+                                        <img src="./assets/img/Email_contact.png" class="card-img-top img-fluid"
+                                            alt="contact-img">
+                                        <!-- <img src="./assets/img/Email__contact_blue.png"
+                                            class="card-img-top img-fluid nothover" alt="contact-img"> -->
+                                        <div class="contact_content">
+                                            <h4 class="para_26_style">
+                                                Email
+                                            </h4>
+                                            <p class="same-para-style">
+                                                contact@qesafety.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#service-section-slider"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#service-section-slider"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -249,14 +356,16 @@
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                             id="inlineRadio1" value="option1">
-                                        <label class="form-check-label same-para-style font-400" for="inlineRadio1">New client</label>
+                                        <label class="form-check-label same-para-style font-400" for="inlineRadio1">New
+                                            client</label>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                             id="inlineRadio2" value="option2">
-                                        <label class="form-check-label same-para-style font-400" for="inlineRadio2">Existing client</label>
+                                        <label class="form-check-label same-para-style font-400"
+                                            for="inlineRadio2">Existing client</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -268,7 +377,7 @@
                                     <input type="number" class="form-control para_16_style" id="inputcontact">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputOrganization "
+                                    <label for="inputOrganization"
                                         class="form-label para_16_style">Organization</label>
                                     <input type="text" class="form-control para_16_style" id="inputOrganization" />
                                 </div>
@@ -278,7 +387,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div><label for="inputarea" class="form-label para_16_style">Review</label></div>
-                                    <textarea name="inputarea" id="inputarea " class="para_16_style" rows="4"
+                                    <textarea name="inputarea" id="inputarea" class="para_16_style" rows="4"
                                         style="width: 100%;"></textarea>
                                 </div>
                                 <div class="col-12">
@@ -289,6 +398,11 @@
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
                                         <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="re-captcha">
+                                        <img src="./assets/img/pngtree-robot-code-button-captcha-recaptcha-png-image_4691080 1.png" alt="recaptcha" class="img-fluid">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -374,6 +488,21 @@
                                     <div class="visit_qes">
                                         <a href="#" class="visit_qes_link para_18_style">Visit: QES Academy</a>
                                     </div>
+                                    <div class="para_22_style menu_head mobile-block mobile-padd">
+                                        <div class="follow"> FOLLOW US </div>
+                                        <a href="#" class="btn">
+                                            <img src="./assets/img/Facebook.png" alt="facebook"
+                                                class="mobile-social-img">
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <img src="./assets/img/LinkedIn 2.png" alt="facebook"
+                                                class="mobile-social-img">
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <img src="./assets/img/WhatsApp.png" alt="facebook"
+                                                class="mobile-social-img">
+                                        </a>
+                                    </div>
                                     <div class="subcribe_form_box mt-3">
                                         <div class="para_22_style menu_head">
                                             Subscribe to hear from us
@@ -382,25 +511,111 @@
                                             <form>
                                                 <label for="email">
                                                     <input type="email" id="email" name="email" placeholder="Email"
-                                                        class="emailform para_18_style" />
+                                                        class="emailform para_18_style" autocomplete='true' />
                                                     <i class="fa-solid fa-arrow-right-long"></i>
                                                 </label>
                                             </form>
                                         </div>
                                     </div>
+                                    <div class="para_22_style menu_head desktop-block desktop-social mobile-padd">
+                                        <div class="follow"> FOLLOW US </div>
+                                        <a href="#" class="btn">
+                                            <img src="./assets/img/Facebook.png" alt="facebook"
+                                                class="mobile-social-img">
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <img src="./assets/img/LinkedIn 2.png" alt="facebook"
+                                                class="mobile-social-img">
+                                        </a>
+                                        <a href="#" class="btn pe-0">
+                                            <img src="./assets/img/WhatsApp.png" alt="facebook"
+                                                class="mobile-social-img">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="common_width mx-auto">
+                        <div class="copyright-content">
+                            <div class="left-side">
+                                <a href="#" class="btn para_16_style"> TERMS & CONDITIONS</a>
+                                <a href="#" class="btn para_16_style"> PRIVACY POLICY</a>
+                            </div>
+                            <div class="right-side para_9_style">
+                                © 2024 QE Safety Consultancy Pte Ltd. <br> All Rights Reserved.
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </footer>
             <!-- footer-section -->
 
+
         </div>
+        <!-- mobile social-icon  -->
+        <div class="mobile-block">
+            <div class="social-icon">
+                <div>
+                    <button class="btn">
+                        <img src="./assets/img/whatsapp_mobile.png" alt="whatsapp_mobile" class="img-fluid">
+                    </button>
+                </div>
+                <div>
+                    <button class="btn">
+                        <img src="./assets/img/gmail_mobile.png" alt="gmail_mobile" class="img-fluid">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile social-icon  -->
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $('.mobile-client-slider').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 1,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '70px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '70px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 
 </html>

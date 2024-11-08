@@ -14,6 +14,15 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title> QES Main - Our-Portfolio </title>
 
@@ -32,11 +41,11 @@
                                     <img src="./assets/img/QES Consultancy 2.png" alt="logo" class="img-fluid">
                                 </div>
                             </div>
-                            <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7 align-self-end ">
+                            <div class="col-6 col-sm-6 col-md-7 col-lg-7 col-xl-7 align-self-end sm-align ">
                                 <div class="navbar_menu">
                                     <ul class="menu_list">
                                         <li class="nav-list">
-                                            <a href="index.html" >Home</a>
+                                            <a href="index.html">Home</a>
                                         </li>
                                         <li class="nav-list">
                                             <a href="about.html" class="active">About Us</a>
@@ -81,6 +90,9 @@
                                         <li class="nav-list"><a href="contactus.html">Contact Us</a></li>
                                     </ul>
                                 </div>
+                                <button class="btn float-end bar_btn mobile-block">
+                                    <img src="./assets/img/Menu.png" alt="menu image" class="img-fluid">
+                                </button>
                             </div>
                             <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                                 <div class="social_box">
@@ -109,7 +121,7 @@
                                             </button>
                                         </div>
                                         <div class="request_btn">
-                                            <a href="contactus.html"  class="btn same_btn">
+                                            <a href="contactus.html" class="btn same_btn">
                                                 Request For Quote
                                             </a>
                                         </div>
@@ -125,10 +137,11 @@
             <!-- banner section  -->
             <div class="banner_section ">
                 <div class="about_banner">
-                    <img src="./assets/img/aboutusbanner.png" alt="banner-img" class="img-fluid">
+                    <img src="./assets/img/our-portfolio.png" alt="banner-img" class="img-fluid desktop-block">
+                    <img src="./assets/img/building_mobile.png" alt="banner-img" class="img-fluid mobile-block">
                 </div>
                 <div class="content">
-                    <div>
+                    <div class="contact_banner_text">
                         <h1>Our Portfolio</h1>
                         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</h3>
                         <div class="banner_request_btn">
@@ -145,7 +158,7 @@
             <!-- portfolio card section  -->
             <div class="our-portfolio-section">
                 <div class="portfolio-inner common_width mx-auto">
-                    <div class="container-fluid">
+                    <div class="container-fluid desktop-block">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                                 <a href="our-portfolio-details.html" class="portfolio-link">
@@ -266,6 +279,113 @@
                             </div>
                         </div>
                     </div>
+                    <div class="mobile-block our-portfolio-slider">
+                        <div class="service_right service_right_mobile ">
+                            <div id="our-portfolio-section-slider" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#our-portfolio-section-slider" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#our-portfolio-section-slider" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#our-portfolio-section-slider" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#our-portfolio-section-slider" data-bs-slide-to="3"
+                                        aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="our-portfolio-details.html" class="portfolio-link">
+                                            <div class="card h-100">
+                                                <img src="./assets/img/singtel.png" class="card-img-top img-fluid"
+                                                    alt="portfolio-img">
+                                                <div class="card-footer">
+                                                    <div class="card-foot">
+                                                        <div class="same-para-style foot-text">
+                                                            Fire Risk Compliance & WSH Consultancy Services (Singtel)
+                                                        </div>
+                                                        <div class="card-arrow">
+                                                            <!-- <i class="fa-solid fa-arrow-right-long"></i> -->
+                                                            <img src="./assets/img/Arrow 2.png" alt="arrow_img" class="w-100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="our-portfolio-details.html" class="portfolio-link">
+                                            <div class="card h-100">
+                                                <img src="./assets/img/school.png" class="card-img-top img-fluid"
+                                                    alt="portfolio-img">
+                                                <div class="card-footer">
+                                                    <div class="card-foot">
+                                                        <div class="same-para-style foot-text">
+                                                            Safety compliance assistance visit plus (SCAV + program) by
+                                                            workplace safety & health council
+                                                        </div>
+                                                        <div class="card-arrow">
+                                                            <!-- <i class="fa-solid fa-arrow-right-long"></i> -->
+                                                            <img src="./assets/img/Arrow 2.png" alt="arrow_img" class="w-100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="our-portfolio-details.html" class="portfolio-link">
+                                            <div class="card h-100">
+                                                <img src="./assets/img/coffe.png" class="card-img-top img-fluid"
+                                                    alt="portfolio-img">
+                                                <div class="card-footer">
+                                                    <div class="card-foot">
+                                                        <div class="same-para-style foot-text">
+                                                            Design & installation of safety provision for Starbucks (fall
+                                                            prevention)
+                                                        </div>
+                                                        <div class="card-arrow">
+                                                            <!-- <i class="fa-solid fa-arrow-right-long"></i> -->
+                                                            <img src="./assets/img/Arrow 2.png" alt="arrow_img" class="w-100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="our-portfolio-details.html" class="portfolio-link">
+                                            <div class="card h-100">
+                                                <img src="./assets/img/applied.png" class="card-img-top img-fluid"
+                                                    alt="portfolio-img">
+                                                <div class="card-footer">
+                                                    <div class="card-foot">
+                                                        <div class="same-para-style foot-text">
+                                                            Design & Installation of safety provision for applied material (fall
+                                                            prevention)
+                                                        </div>
+                                                        <div class="card-arrow">
+                                                            <!-- <i class="fa-solid fa-arrow-right-long"></i> -->
+                                                            <img src="./assets/img/Arrow 2.png" alt="arrow_img" class="w-100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#our-portfolio-section-slider"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#our-portfolio-section-slider"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -341,6 +461,21 @@
                                     <div class="visit_qes">
                                         <a href="#" class="visit_qes_link para_18_style">Visit: QES Academy</a>
                                     </div>
+                                    <div class="para_22_style menu_head mobile-block mobile-padd">
+                                        <div class="follow"> FOLLOW US </div>
+                                        <a href="#" class="btn">
+                                            <img src="./assets/img/Facebook.png" alt="facebook"
+                                                class="mobile-social-img">
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <img src="./assets/img/LinkedIn 2.png" alt="facebook"
+                                                class="mobile-social-img">
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <img src="./assets/img/WhatsApp.png" alt="facebook"
+                                                class="mobile-social-img">
+                                        </a>
+                                    </div>
                                     <div class="subcribe_form_box mt-3">
                                         <div class="para_22_style menu_head">
                                             Subscribe to hear from us
@@ -355,19 +490,103 @@
                                             </form>
                                         </div>
                                     </div>
+                                    <div class="para_22_style menu_head desktop-block desktop-social mobile-padd">
+                                        <div class="follow"> FOLLOW US </div>
+                                        <a href="#" class="btn">
+                                            <img src="./assets/img/Facebook.png" alt="facebook"
+                                                class="mobile-social-img">
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <img src="./assets/img/LinkedIn 2.png" alt="facebook"
+                                                class="mobile-social-img">
+                                        </a>
+                                        <a href="#" class="btn pe-0">
+                                            <img src="./assets/img/WhatsApp.png" alt="facebook"
+                                                class="mobile-social-img">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="common_width mx-auto">
+                        <div class="copyright-content">
+                            <div class="left-side">
+                                <a href="#" class="btn para_16_style"> TERMS & CONDITIONS</a>
+                                <a href="#" class="btn para_16_style"> PRIVACY POLICY</a>
+                            </div>
+                            <div class="right-side para_9_style">
+                                © 2024 QE Safety Consultancy Pte Ltd. <br> All Rights Reserved.
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </footer>
             <!-- footer-section -->
-
         </div>
+        <!-- mobile social-icon  -->
+        <div class="mobile-block">
+            <div class="social-icon">
+                <div>
+                    <a href="#" class="btn">
+                        <img src="./assets/img/whatsapp_mobile.png" alt="whatsapp_mobile" class="img-fluid">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="btn">
+                        <img src="./assets/img/gmail_mobile.png" alt="gmail_mobile" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- mobile social-icon  -->
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $('.mobile-client-slider').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 1,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '70px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '70px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 
 </html>
