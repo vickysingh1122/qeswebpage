@@ -905,7 +905,7 @@ header .row .col-lg-3 {
 }
 
 .about-portfolio .banner_request_btn .same_btn {
-    width: 200px;
+    width: fit-content;
 }
 
 .our-portfolio-section img {
@@ -1224,7 +1224,7 @@ header .row .col-lg-3 {
     background: transparent;
     color: #093E82 !important;
     margin-top: 5px;
-    width: 150px;
+    min-width: 150px;
 }
 
 .contact-form textarea#message {
@@ -2214,7 +2214,9 @@ button.btn.text-reset i {
     color: #707070;
 }
 
-
+footer li.item_list {
+    margin-bottom: 4px;
+}
 
 /* article-details css */
 
@@ -3306,7 +3308,7 @@ button.btn.text-reset i {
         box-shadow: 0px 0px 4px 0px #0000001A;
     }
 
- 
+
     .mobile_menu_section .menu_list .nav-list {
         padding: 5px 0px;
         display: flex;
@@ -3315,6 +3317,7 @@ button.btn.text-reset i {
         width: 100%;
         flex-wrap: wrap;
     }
+
     .mobile_menu_section .menu_list .nav-list .menu-dropdown {
         position: unset;
         width: 100%;
@@ -3322,15 +3325,24 @@ button.btn.text-reset i {
         background: #f5f5f5;
         border-top: 2px solid #1d4281;
     }
-    .mobile_menu_section .menu_list .nav-list a,.mobile_menu_section .contact_help_details a {
+
+    .mobile_menu_section .menu_list .nav-list a,
+    .mobile_menu_section .contact_help_details a {
         padding: 5px 0px;
     }
+
     .mobile_menu_section li.nav-drop-link {
         margin-bottom: 10px;
         margin-top: 5px;
     }
+
     .mobile_menu_section .offcanvas-body {
         padding: 5px 1rem;
+    }
+
+    .home .carousel-inner {
+        width: 95%;
+        margin: auto;
     }
 }
 
@@ -3729,6 +3741,10 @@ button.btn.text-reset i {
         font-weight: 350;
 
     }
+
+    .leftsection .content span {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 1366px) {
@@ -3793,6 +3809,13 @@ button.btn.text-reset i {
     .header_logo {
         width: 130px;
     }
+
+    .leftsection .content span {
+        font-size: 38px;
+        font-weight: 900;
+        margin-left: 10px;
+        line-height: 50px;
+    }
 }
 
 @media screen and (min-width: 1600px) {
@@ -3811,6 +3834,12 @@ button.btn.text-reset i {
     .card-view-inner .card .card-title {
         line-height: 39px;
     }
+
+    .leftsection::before {
+        width: 90%;
+        height: 80%;
+    }
+
 }
 
 @media screen and (min-width: 1920px) {
@@ -3945,5 +3974,18 @@ button.btn.text-reset i {
 
     .testimonial-form .form-head .para_30_style {
         line-height: 39px;
+    }
+
+    .leftsection .content div {
+        font-size: clamp(60px, 8vw, 100px);
+        font-weight: 900;
+        line-height: 50px;
+    }
+
+    .leftsection .content span {
+        font-size: clamp(24px, 2.5vw, 45px);
+        /* font-size: 45px; */
+        font-weight: 900;
+        line-height: 50px;
     }
 }
