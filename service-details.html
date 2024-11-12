@@ -91,7 +91,8 @@
                                         <li class="nav-list"><a href="contactus.html">Contact Us</a></li>
                                     </ul>
                                 </div>
-                                <button class="btn float-end bar_btn mobile-block">
+                                <button class="btn float-end bar_btn mobile-block" data-bs-toggle="offcanvas"
+                                    href="#header_mobile_menu" role="button" aria-controls="header_mobile_menu">
                                     <img src="./assets/img/Menu.png" alt="menu image" class="img-fluid">
                                 </button>
                             </div>
@@ -135,6 +136,70 @@
                 </div>
             </header>
             <!-- header section  -->
+            <!-- mobile-menu  -->
+            <div class="offcanvas offcanvas-start mobile_menu_section" tabindex="-1" id="header_mobile_menu"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <div class="header_logo">
+                        <img src="./assets/img/QES Consultancy 2.png" alt="logo" class="img-fluid">
+                    </div>
+                    <button type="button" class="btn text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar_menu_mobile">
+                        <ul class="menu_list">
+                            <li class="nav-list">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="about.html">About Us</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <div class="menu-dropdown">
+                                    <ul class="nav-drop-box">
+                                        <li class="nav-drop-link">
+                                            <a href="our-portfolio.html">Our Portfolio</a>
+                                        </li>
+                                        <li class="nav-drop-link">
+                                            <a href="testimonial.html">Testimonials</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-list">
+                                <a href="our-services.html" class="active">Services</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <div class="menu-dropdown">
+                                    <ul class="nav-drop-box">
+                                        <li class="nav-drop-link">
+                                            <a href="service-details.html" class="active">Service
+                                                Details</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-list">
+                                <a href="#">Resources</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <div class="menu-dropdown">
+                                    <ul class="nav-drop-box">
+                                        <li class="nav-drop-link">
+                                            <a href="article-collection.html">Articles</a>
+                                        </li>
+                                        <li class="nav-drop-link">
+                                            <a href="case-study-media.html">Case Study</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-list"><a href="Projects.html">Projects</a></li>
+                            <li class="nav-list"><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile-menu  -->
             <!-- banner section  -->
             <div class="banner_section ">
                 <div class="about_banner">
@@ -145,7 +210,8 @@
                 <div class="content">
                     <div class="contact_banner_text">
                         <h1>bizSAFE Consultancy</h1>
-                        <h3>bizSAFE Consultancy: bizSAFE is a five-step programme to help your company <br class="desktop-block"/> to build up
+                        <h3>bizSAFE Consultancy: bizSAFE is a five-step programme to help your company <br
+                                class="desktop-block" /> to build up
                             capabilities in addressing workplace safety, health and security.</h3>
                         <div class="banner_request_btn">
                             <button type="button" class="btn same_btn">
@@ -276,25 +342,27 @@
                         </div>
                     </div>
                     <div class="level-card-box mobile-block">
-                         <div class="container-fluid">
-                            <div class="service_right blog_box_mobile level-card level_card_box pt-0 mt-0 service_right_mobile ">
+                        <div class="container-fluid">
+                            <div
+                                class="service_right blog_box_mobile level-card level_card_box pt-0 mt-0 service_right_mobile ">
                                 <div id="blog-slider-mobile" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#blog-slider-mobile"
-                                            data-bs-slide-to="0" class="active" aria-current="true"
-                                            aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#blog-slider-mobile"
-                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#blog-slider-mobile"
-                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#blog-slider-mobile" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#blog-slider-mobile" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#blog-slider-mobile" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <div class="level card-item">
                                                 <h2 class="para_26_style">BizSAFE 1</h2>
                                                 <p class="same-para-style">
-                                                    Applicants (Company owner, Director, CEO/Top Management, and one who has the
-                                                    responsibilities to carry out safety policy in the company) must attend a 1/2-day
+                                                    Applicants (Company owner, Director, CEO/Top Management, and one who
+                                                    has the
+                                                    responsibilities to carry out safety policy in the company) must
+                                                    attend a 1/2-day
                                                     workshop titled “Workshop for CEO/Top Management (bizSAFE Level 1)”
                                                     Course Duration: 1/2-day course
                                                 </p>
@@ -304,9 +372,12 @@
                                             <div class="level card-item">
                                                 <h2 class="para_26_style">BizSAFE 2</h2>
                                                 <p class="same-para-style">
-                                                    Organizations must nominate a Risk Management (RM) champion to attend a bizSAFE
-                                                    course on Risk Management which is usually titled as “Develop a Risk Management
-                                                    Implementation Plan bizSAFE Level 2”. At the end of the course, the RM Champion will
+                                                    Organizations must nominate a Risk Management (RM) champion to
+                                                    attend a bizSAFE
+                                                    course on Risk Management which is usually titled as “Develop a Risk
+                                                    Management
+                                                    Implementation Plan bizSAFE Level 2”. At the end of the course, the
+                                                    RM Champion will
                                                     be expected to be able to chart out an RM implementation plan.
                                                     Course Duration: 2-day course including 1-day assessment
                                                 </p>
@@ -316,10 +387,14 @@
                                             <div class="level card-item">
                                                 <h2 class="para_26_style">BizSAFE 3</h2>
                                                 <p class="same-para-style">
-                                                    Organizations must engage an approved independent auditor to assess the
-                                                    implementation of Risk Management in the enterprise. Upon approval, the enterprise
-                                                    will be recognized as a bizSAFE level 3 enterprise. Organizations that have attained
-                                                    bizSAFE 3 will be able to utilize and showcase the logo on their website and similar
+                                                    Organizations must engage an approved independent auditor to assess
+                                                    the
+                                                    implementation of Risk Management in the enterprise. Upon approval,
+                                                    the enterprise
+                                                    will be recognized as a bizSAFE level 3 enterprise. Organizations
+                                                    that have attained
+                                                    bizSAFE 3 will be able to utilize and showcase the logo on their
+                                                    website and similar
                                                     platforms as a showcase that it is a bizSAFE 3 organization.
                                                 </p>
                                             </div>
