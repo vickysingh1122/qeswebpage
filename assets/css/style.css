@@ -2255,8 +2255,17 @@ a:hover {
     color: #093e82;
 }
 
+.home .service_section .card-item {
+    aspect-ratio: 1;
+}
+
 /* article-details css */
 
+@media screen and (max-width: 1300px) {
+    .project-template .contactus-box {
+        margin-top: -200px;
+    } 
+}
 @media screen and (max-width: 992px) {
     .header_logo {
         width: 83px;
@@ -3606,6 +3615,12 @@ a:hover {
     .home .service_right {
         gap: 23px 20px;
     }
+    .project-template .contactus-box {
+        margin-top: -150px;
+    }
+    .blue-bg {
+        height: 500px; 
+    }
 }
 
 @media only screen and (min-width:1024px) and (max-width: 1100px) {
@@ -3635,6 +3650,7 @@ a:hover {
     .social-section {
         margin-left: -40px;
     }
+    
 
 }
 
@@ -3778,6 +3794,9 @@ a:hover {
     .social-section {
         margin-left: -100px;
     }
+    .project-template .contactus-box {
+        margin-top: -170px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -3859,6 +3878,7 @@ a:hover {
     .footer_contact_message {
         height: 285px;
     }
+    
 }
 
 @media screen and (min-width: 1440px) {
@@ -3872,6 +3892,18 @@ a:hover {
         margin-left: 10px;
         line-height: 50px;
     }
+}
+
+@media screen and (min-width: 1530px) {
+    .blue-bg {
+        height: 650px;
+        top: 210px;
+    }
+
+    .project-template .contactus-box {
+        margin-top: -250px;
+    }
+
 }
 
 @media screen and (min-width: 1600px) {
@@ -3894,6 +3926,10 @@ a:hover {
     .leftsection::before {
         width: 90%;
         height: 80%;
+    }
+
+    .project-template .contactus-box {
+        margin-top: -290px;
     }
 
 }
@@ -4047,5 +4083,10 @@ a:hover {
 
     .same_btn {
         padding: 11px 20px;
+    }
+
+    .blue-bg {
+        height: 760px;
+        top: 270px;
     }
 }
